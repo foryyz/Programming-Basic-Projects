@@ -19,4 +19,7 @@ add_executable(Cpp_STL_Learn main.cpp
         HowToUseFunctor.h
         HowToUsePredicate.h
         HowToUseFunctorInSTL.h
+        BasicAlgo_foreach.h
+        BasicAlgo_search.h
+        BasicAlgo_sort.h
 )

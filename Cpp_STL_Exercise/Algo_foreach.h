@@ -2,8 +2,8 @@
 // Created by yyz on 2024/11/10.
 //
 
-#ifndef CPP_STL_LEARN_BASICALGO_FOREACH_H
-#define CPP_STL_LEARN_BASICALGO_FOREACH_H
+#ifndef CPP_STL_LEARN_ALGO_FOREACH_H
+#define CPP_STL_LEARN_ALGO_FOREACH_H
 
 #include <iostream>
 #include <vector>
@@ -50,4 +50,4 @@ void algo_HowToUse_transform(){
 }
 
 
-#endif //CPP_STL_LEARN_BASICALGO_FOREACH_H
+#endif //CPP_STL_LEARN_ALGO_FOREACH_H

@@ -2,8 +2,8 @@
 // Created by yyz on 2024/11/10.
 //
 
-#ifndef CPP_STL_LEARN_BASICALGO_SORT_H
-#define CPP_STL_LEARN_BASICALGO_SORT_H
+#ifndef CPP_STL_LEARN_ALGO_SORT_H
+#define CPP_STL_LEARN_ALGO_SORT_H
 
 #include <iostream>
 #include <random>
@@ -74,4 +74,4 @@ void algo_HowToUse_reverse(){
         std::cout << it;
     }
 }
-#endif //CPP_STL_LEARN_BASICALGO_SORT_H
+#endif //CPP_STL_LEARN_ALGO_SORT_H

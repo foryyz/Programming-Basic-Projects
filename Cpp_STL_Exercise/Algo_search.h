@@ -2,8 +2,8 @@
 // Created by yyz on 2024/11/10.
 //
 
-#ifndef CPP_STL_LEARN_BASICALGO_SEARCH_H
-#define CPP_STL_LEARN_BASICALGO_SEARCH_H
+#ifndef CPP_STL_LEARN_ALGO_SEARCH_H
+#define CPP_STL_LEARN_ALGO_SEARCH_H
 
 #include <vector>
 #include <string>
@@ -134,4 +134,4 @@ void algo_HowToUse_countif(){
     }
     std::cout << "一共找到" <<std::count_if(v.begin(),v.end(), GreaterThree) << "个大于3的数字" << std::endl;
 }
-#endif //CPP_STL_LEARN_BASICALGO_SEARCH_H
+#endif //CPP_STL_LEARN_ALGO_SEARCH_H

@@ -108,3 +108,24 @@ public:
         return ans;
     }
 };
+
+// 5. 自己写的
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        vector<vector<string>> ans;
+        unordered_map<int, vector<string>> mp;
+
+        for(string& str : strs){
+            long long sum = 1;
+            for(char ch : str){
+                sum = (long long)(ch*ch*ch*ch);
+            }
+            mp[sum].emplace_back(str);
+        }
+        for(auto it : mp){
+            ans.emplace_back(it.second);
+        }
+        return ans;
+    }
+};

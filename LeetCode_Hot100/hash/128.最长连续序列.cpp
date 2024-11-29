@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <unordered_map>
+#include <unordered_set>
 #include <algorithm>
 
 using namespace std;
@@ -36,5 +36,30 @@ public:
         }
 
         return result;
+    }
+};
+
+// 方式2. 官方题解 哈希表
+// https://leetcode.cn/problems/longest-consecutive-sequence/?envType=study-plan-v2&envId=top-100-liked
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums) {
+        unordered_set<int> num_set;
+        for(const int& num : nums){
+            num_set.insert(num);
+        }
+        int longestStreak = 0;
+        for(const int& num : num_set){
+            if (!num_set.count(num-1)){ // 关键判断语句，判断容器内是否存在num-1的数字
+                int currentNum = num;
+                int currentStreak = 1;
+                while (num_set.count(currentNum + 1)){
+                    currentNum += 1;
+                    currentStreak += 1;
+                }
+                longestStreak = max(longestStreak, currentStreak);
+            }
+        }
+        return longestStreak;
     }
 };

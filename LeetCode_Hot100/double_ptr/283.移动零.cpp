@@ -6,29 +6,13 @@ using namespace std;
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
-        auto it = nums.begin();
-        int zero_sum = 0;
-        for(int i=0; i!=nums.size(); ++i){
-            if (*it == 0){
-                zero_sum ++;
-                if (i == nums.size()-1){
-                    nums.erase(it);
-                    cout << "del this" << endl;
-                    continue;;
-                }
-                it++;
-                nums.erase(it-1);
-                cout << "del priot" << endl;
-                continue;
+        int n = nums.size(), left = 0, right = 0;
+        while(right < n){
+            if(nums[right]){
+                swap(nums[left], nums[right]);
+                left++;
             }
-        }
-        cout << "0 del over" << endl;
-        for(const auto& it : nums){
-            cout << it << " ";
-        }
-        cout << endl;
-        for (int i = 0; i < zero_sum; i++){
-            nums.push_back(0);
+            right++;
         }
     }
 };
